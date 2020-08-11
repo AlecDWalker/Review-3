@@ -1,0 +1,3 @@
+def spellchecker(string)
+
+end
