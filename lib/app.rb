@@ -1,8 +1,11 @@
 def spellchecker(string)
-  dictionary = ['Ball']
-  if dictionary.include?(string)
-    return string
-  else
-    return "~#{string}~"
-  end
+  dictionary = ['Ball', 'Red']
+  array = string.split
+  return array.map { |word|
+    if dictionary.include?(word)
+      word = word
+    else
+    word = "~#{word}~"
+    end
+  }.join(" ")
 end

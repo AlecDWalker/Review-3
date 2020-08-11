@@ -9,4 +9,8 @@ describe 'spellchecker' do
   it 'should be able to return a highlighted error with a single word' do
     expect(spellchecker('Balf')).to eq '~Balf~'
   end
+
+  it 'should be able to spell check multiple words at once' do
+    expect(spellchecker("Ref Balf")).to eq "~Ref~ ~Balf~"
+  end
 end
