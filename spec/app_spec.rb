@@ -3,7 +3,7 @@ require 'app'
 describe 'spellchecker' do
 
   it 'should be able to return a string that needs no correction' do
-    expect(spellchecker("Hello world")).to eq "Hello world"
+    expect(spellchecker("Ball")).to eq "Ball"
   end
 
   it 'should be able to return a highlighted error with a single word' do
