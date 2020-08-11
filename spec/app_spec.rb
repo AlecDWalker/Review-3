@@ -13,4 +13,8 @@ describe 'spellchecker' do
   it 'should be able to spell check multiple words at once' do
     expect(spellchecker("Ref Balf")).to eq "~Ref~ ~Balf~"
   end
+
+  it 'should be able to understand words regardless of capitalisation' do
+    expect(spellchecker("Ball ball")).to eq "Ball ball"
+  end
 end
